@@ -7,7 +7,7 @@ Features :
 
 How to run this example :
 
-`
+```sh
 ## build docker images
 mvn clean install
 
@@ -19,7 +19,7 @@ docker-compose up
 
 ##starts a 2nd instance of echo-service
 docker-compose scale echo-service=2
-`
+```
 
 Once the all services are up, the following URLs will be available
 
