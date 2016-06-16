@@ -21,7 +21,7 @@ docker-compose up
 docker-compose scale echo-service=2
 ```
 
-Once the all services are up, the following URLs will be available
+Once all the services are up, the following URLs will be available
 
 Address | Description
 --- | ---
