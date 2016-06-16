@@ -11,7 +11,7 @@ How to run this example :
 ## build docker images
 mvn clean install
 
-##should list the three docker images just build
+##should display three freshly built docker images
 docker images
 
 ##start up all instances
