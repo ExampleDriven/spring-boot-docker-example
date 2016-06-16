@@ -2,7 +2,9 @@
 # spring-boot-docker-example
 
 Features :
-- Maven docker plugin, build images without dockerfile
+- Maven docker plugin
+- build images without dockerfile
+- Docker in a multi module project
 - docker-compose definition
 
 How to run this example :
