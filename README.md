@@ -1,6 +1,10 @@
 [![Build Status](https://travis-ci.org/ExampleDriven/spring-boot-docker-example.svg?branch=master)](https://travis-ci.org/ExampleDriven/spring-boot-docker-example)
 # spring-boot-docker-example
 
+This is the source code for the blog post
+
+https://exampledriven.wordpress.com/2016/06/24/spring-boot-docker-example/
+
 Features :
 - Maven docker plugin
 - build images without dockerfile
