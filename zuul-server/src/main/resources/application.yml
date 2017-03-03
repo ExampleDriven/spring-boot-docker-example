@@ -11,6 +11,15 @@ zuul:
 #  Uncomment to disable services automatically registering in Zuul
 #  ignoredServices: '*'
 
+  routes:
+    echo-by-dns:
+      path: /echo-service-by-dns/**
+      url: http://echo-service:9098
+
 spring:
   application:
     name: zuul-server
+
+management:
+  security:
+    enabled: false

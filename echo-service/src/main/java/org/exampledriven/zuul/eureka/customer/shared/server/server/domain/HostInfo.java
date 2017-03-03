@@ -3,13 +3,16 @@ package org.exampledriven.zuul.eureka.customer.shared.server.server.domain;
 /**
  * Created by Peter_Szanto on 6/16/2016.
  */
-public class Host {
+public class HostInfo {
 
     private String address;
     private int port;
     private String hostName;
 
-    public Host(String address, int port, String hostName) {
+    public HostInfo() {
+    }
+
+    public HostInfo(String address, int port, String hostName) {
         this.address = address;
         this.port = port;
         this.hostName = hostName;

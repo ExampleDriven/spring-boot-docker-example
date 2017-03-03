@@ -16,3 +16,7 @@ eureka:
 spring:
   application:
     name: echo-service
+
+management:
+  security:
+    enabled: false

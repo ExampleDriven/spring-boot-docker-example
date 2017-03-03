@@ -1,13 +1,13 @@
-version: '2'
+version: '3'
 services:
-  echo-service:
-    image: echo-service
-    depends_on:
-     - eureka-server
   eureka-server:
     image: eureka-server
     ports:
      - "8761:8761"
+  echo-service:
+    image: echo-service
+    depends_on:
+     - eureka-server
   zuul-server:
     image: zuul-server
     depends_on:
