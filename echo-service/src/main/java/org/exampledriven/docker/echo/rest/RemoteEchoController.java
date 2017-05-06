@@ -1,8 +1,8 @@
-package org.exampledriven.zuul.eureka.customer.shared.server.server.rest;
+package org.exampledriven.docker.echo.rest;
 
-import org.exampledriven.zuul.eureka.customer.shared.server.server.Config;
-import org.exampledriven.zuul.eureka.customer.shared.server.server.domain.HostInfo;
-import org.exampledriven.zuul.eureka.customer.shared.server.server.domain.HostFactory;
+import org.exampledriven.docker.echo.Config;
+import org.exampledriven.docker.echo.domain.HostFactory;
+import org.exampledriven.docker.echo.domain.HostInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,8 +36,9 @@ public class RemoteEchoController {
         Map result = new HashMap<String, HostInfo>();
         result.put("local", HostFactory.create(request));
 
-        getRemoteHostInfo(result, "remote-dns", restTemplate, "http://echo-service:9098/echo");
-        getRemoteHostInfo(result, "remote-ribbon", loadBalancedRestTemplate, "http://echo-service/echo");
+        getRemoteHostInfo(result, "http://example_echo-service:9098/echo (Docker swarm service)", restTemplate, "http://example_echo-service:9098/echo");
+        getRemoteHostInfo(result, "http://echo-service:9098/echo (Docker compose DNS entry)", restTemplate, "http://echo-service:9098/echo");
+        getRemoteHostInfo(result, "http://echo-service/echo (Ribbon+Eureka)", loadBalancedRestTemplate, "http://echo-service/echo");
 
         return result;
 

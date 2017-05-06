@@ -1,4 +1,4 @@
-package org.exampledriven.zuul.eureka.customer.server;
+package org.exampledriven.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

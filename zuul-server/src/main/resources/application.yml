@@ -1,10 +1,10 @@
 server:
-  port: 9090
+  port: ${server_port:9090}
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: ${eureka_url:http://eureka-server:8761/eureka/}
 
 zuul:
   prefix: /api

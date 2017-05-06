@@ -1,4 +1,4 @@
-package org.exampledriven.zuul.eureka.customer.shared.server.server.domain;
+package org.exampledriven.docker.echo.domain;
 
 /**
  * Created by Peter_Szanto on 6/16/2016.

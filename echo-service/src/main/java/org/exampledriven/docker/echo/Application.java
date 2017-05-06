@@ -1,4 +1,4 @@
-package org.exampledriven.zuul.eureka.customer.shared.server.server;
+package org.exampledriven.docker.echo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

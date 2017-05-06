@@ -1,5 +1,5 @@
 server:
-  port: 9098
+  port: ${server_port:9098}
 
 eureka:
   instance:
@@ -7,7 +7,7 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: ${eureka_url:http://eureka-server:8761/eureka/}
     healthcheck:
       enabled: true
     lease:
@@ -16,6 +16,9 @@ eureka:
 spring:
   application:
     name: echo-service
+  devtools:
+    remote:
+      secret: mysecret
 
 management:
   security:

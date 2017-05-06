@@ -8,6 +8,9 @@ services:
     image: echo-service
     depends_on:
      - eureka-server
+    deploy:
+      mode: replicated
+      replicas: 2
   zuul-server:
     image: zuul-server
     depends_on:

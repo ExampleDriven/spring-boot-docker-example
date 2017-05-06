@@ -1,6 +1,6 @@
-package org.exampledriven.zuul.eureka.customer.shared.server.server.rest;
+package org.exampledriven.docker.echo.rest;
 
-import org.exampledriven.zuul.eureka.customer.shared.server.server.domain.HostInfo;
+import org.exampledriven.docker.echo.domain.HostInfo;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;

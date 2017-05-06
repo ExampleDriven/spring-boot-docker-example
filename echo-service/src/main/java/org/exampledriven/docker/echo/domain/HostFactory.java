@@ -1,4 +1,4 @@
-package org.exampledriven.zuul.eureka.customer.shared.server.server.domain;
+package org.exampledriven.docker.echo.domain;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
