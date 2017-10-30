@@ -81,10 +81,7 @@
                 <configuration>
                     <imageName>${project.artifactId}</imageName>
                     <baseImage>java:8</baseImage>
-                    <env>
-                        <JAVA_OPTS>""</JAVA_OPTS>
-                    </env>
-                    <entryPoint>["java", "$JAVA_OPTS", "-jar", "/${project.build.finalName}.jar", "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,suspend=n"]</entryPoint>
+                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar", "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,suspend=n"]</entryPoint>
                     <!-- copy the service's jar file from target into the root directory of the image -->
                     <resources>
                         <resource>
