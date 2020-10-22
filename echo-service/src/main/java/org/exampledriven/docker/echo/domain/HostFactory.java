@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class HostFactory {
 
+    private HostFactory(){
+    }
+
     public static HostInfo create(HttpServletRequest request) {
         return new HostInfo(request.getLocalAddr(), request.getLocalPort(), getHostName());
     }
