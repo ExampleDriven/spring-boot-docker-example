@@ -1,5 +1,5 @@
 language: java
 jdk:
-    - openjdk8
+  - openjdk8
 services:
-    - docker
+  - docker
