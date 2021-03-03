@@ -1,4 +1,10 @@
 language: java
-jdk: openjdk10
+jdk:
+- openjdk8
+
+sudo: true
+
 services:
   - docker
+
+script: mvn clean install
