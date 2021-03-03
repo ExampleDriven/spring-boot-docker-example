@@ -10,16 +10,13 @@ import org.springframework.web.client.RestTemplate;
 public class RemoteHostInfoClient {
 
     public HostInfo getRemoteHostInfo(RestTemplate restTemplate, String url) {
-
-        HostInfo hostInfo = restTemplate.exchange(
+        return restTemplate.exchange(
                 url,
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<HostInfo>() {})
-            .getBody();
-
-        return hostInfo;
-
+                new ParameterizedTypeReference<HostInfo>() {
+                })
+                .getBody();
     }
 
 }

@@ -1,4 +1,4 @@
-package org.exampledriven.docker.echo;
+package org.exampledriven.docker.echo.config;
 
 import com.netflix.appinfo.AmazonInfo;
 import org.springframework.beans.factory.annotation.Qualifier;
